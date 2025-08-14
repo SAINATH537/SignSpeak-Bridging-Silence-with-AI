@@ -1,0 +1,197 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; 
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #53faae;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            height: 4rem;
+        }
+        .nav-link {
+            margin: 0 8px;
+            color: #222 !important;
+        }
+
+main {
+    display: flex;
+    max-width: 1550px;
+    /* margin: 2rem auto; */
+    gap: 2rem;
+    padding: 2rem 2rem;
+    background-color: lightcyan;
+  }
+  /* Each panel */
+  .panel {
+    background-color: #fff;
+    flex: 1;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    padding: 2rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 0;
+  }
+  /* Panel Headers */
+  .panel h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.625rem;
+    font-weight: 700;
+    color: #222222;
+  }
+  /* Mic and image container */
+  .voice-sign-language {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .mic-button {
+    background-color: #4caf50;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+  }
+  .mic-button:hover,
+  .mic-button:focus {
+    background-color: #388e3c;
+    outline: none;
+  }
+  .mic-icon {
+    color: white;
+    font-size: 30px;
+  }
+  .sign-image-container {
+    width: 96px;
+    height: 96px;
+    border-radius: 0.5rem;
+    background-color: #f2f2f2;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Images */
+  .panel img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    user-select: none;
+    pointer-events: none;
+  }
+  /* Select dropdown */
+  select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #cbd5e0;
+    font-size: 1rem;
+    color: #4a4a4a;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+  }
+  select:focus {
+    outline: none;
+    border-color: #ff5722;
+    box-shadow: 0 0 2px #ff5722;
+  }
+  /* Textarea input */
+  textarea, input[type="text"] {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #cbd5e0;
+    padding: 0.75rem 1rem;
+    resize: vertical;
+    min-height: 3.5rem;
+    color: #2d2d2d;
+    transition: border-color 0.2s ease;
+  }
+  textarea::placeholder {
+    color: #9ca3af;
+  }
+  textarea:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #ff5722;
+    box-shadow: 0 0 3px #ff5722;
+  }
+  /* Buttons */
+  .button-group {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  button {
+    background-color: #f9fafb;
+    border: 1px solid #cbd5e0;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  button:hover,
+  button:focus {
+    background-color: #ff5722;
+    border-color: #ff5722;
+    color: #fff;
+    outline: none;
+  }
+  /* Download button full width for right panel */
+  .download-button {
+    align-self: flex-start;
+    margin-top: 0.75rem;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+      margin: 2rem 1rem;
+    }
+    .panel {
+      width: 100%;
+    }
+    .voice-sign-language {
+      justify-content: center;
+    }
+  }
+
+   /* Footer */
+        .f-info-social, .f-info-links, .f-info-brand{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .f-info-social i{
+            font-size: 1.3rem;
+            margin: 0.5rem 0.5rem;
+        }
+        .f-info-links a{
+            margin: 0.5rem 0.5rem;
+            text-decoration: none;
+        }
+        .f-info-links a:hover{
+            text-decoration: underline;
+        }
+        .f-info{
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: space-evenly;
+            justify-content: center;
+            /* background-color: rgb(16, 36, 54); */
+            background-color: rgb(17 24 39);
+            height: 8rem;
+            color: white;
+        }
