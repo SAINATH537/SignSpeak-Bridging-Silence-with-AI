@@ -37,10 +37,11 @@
         <section class="panel" aria-labelledby="voice-to-sign-title">
         <h2 id="voice-to-sign-title">Voice to Sign Language</h2>
         <div class="sign-image-container" style="width: 100%; height: 260px;">
-            <img 
-                src="" 
-                alt="" 
-                style="border-radius: 0.5rem;" />
+            <video 
+                src="../static/animation.mp4" 
+                autoplay
+                loop
+                style="border-radius: 0.5rem;">
         </div>
         <div class="voice-sign-language">
             <button type="button" class="mic-button">
@@ -63,10 +64,7 @@
     <section class="panel" aria-labelledby="sign-to-text-title">
         <h2 id="sign-to-text-title">Sign Language to Text</h2>
         <div class="sign-image-container" style="width: 100%; height: 260px;">
-            <img 
-                src="" 
-                alt="" 
-                style="border-radius: 0.5rem;" />
+            <video id="webcam" autoplay playsinline style="width: 500px; border: 2px solid black; border-radius: 8px;"></video>
         </div>
         <textarea aria-label="Detected text from sign language input" placeholder="Detected Text" rows="5" readonly></textarea>
         <button class="download-button" type="button">Download Transcript</button>
@@ -113,6 +111,19 @@
             });
         });
         </script>
+        <script>
+        // Get the video element
+        const video = document.getElementById("webcam");
 
+        // Ask for webcam access
+        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+            .then(stream => {
+                video.srcObject = stream; // Set webcam stream to video element
+            })
+            .catch(error => {
+                console.error("Error accessing webcam:", error);
+                alert("Could not access the webcam. Please allow permissions.");
+            });
+    </script>
 </body>
 </html>
