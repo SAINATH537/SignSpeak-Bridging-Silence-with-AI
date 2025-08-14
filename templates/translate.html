@@ -38,9 +38,11 @@
         <h2 id="voice-to-sign-title">Voice to Sign Language</h2>
         <div class="sign-image-container" style="width: 100%; height: 260px;">
             <video 
-                src="../static/animation.mp4" 
-                autoplay
-                loop
+                src="../static/Img_Video/animation.mp4" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
                 style="border-radius: 0.5rem;">
         </div>
         <div class="voice-sign-language">
@@ -112,18 +114,18 @@
         });
         </script>
         <script>
-        // Get the video element
-        const video = document.getElementById("webcam");
+            // Get the video element
+            const video = document.getElementById("webcam");
 
-        // Ask for webcam access
-        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
-            .then(stream => {
-                video.srcObject = stream; // Set webcam stream to video element
-            })
-            .catch(error => {
-                console.error("Error accessing webcam:", error);
-                alert("Could not access the webcam. Please allow permissions.");
-            });
-    </script>
+            // Ask for webcam access
+            navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+                .then(stream => {
+                    video.srcObject = stream; // Set webcam stream to video element
+                })
+                .catch(error => {
+                    console.error("Error accessing webcam:", error);
+                    alert("Could not access the webcam. Please allow permissions.");
+                });
+        </script>
 </body>
 </html>
