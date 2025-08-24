@@ -5,36 +5,35 @@
 
         /* Navbar */
         .navbar {
-            /* background-color: #53faae; */
-            background-color: #FFE5B4;
+            background-color: #ffeddd;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             height: 4rem;
         }
         .nav-link {
             margin: 0 8px;
-            color: #222 !important;
+            color: #4A3F35 !important;
         }
-
-        .btn{
-            background-color: #FF6F61;
+        .nav-link:hover {
+            color: #FF6F61  !important;
         }
 
         /* Hero */
         .hero-section {
-            /* background: linear-gradient(90deg, #63f9a9 0%, #4fd8a3 100%); */
-            /* background: linear-gradient(135deg, #ffb6b9, #fae3d9); */
-            background-color: #FFE5B4;
+            background-color: #fbe6bf;
             padding: 80px 20px;
             height: auto;
         }
         .hero-text h1 {
-            color: #4A3F35;
+            color: #5A4638;
             font-weight: bold;
             font-size: 2.8rem;
         }
         .hero-text h4 {
             font-weight: 400;
             margin-bottom: 20px;
+        }
+        .hero-text h4, .hero-text p {
+            color: #5A4638;
         }
         .hero-image img {
             max-width: 500px;
@@ -45,14 +44,15 @@
         /* Features */
         .features-section {
             padding: 60px 20px;
+            background-color: #fffaf6;
         }
         .feature-card {
-            background: white;
+            background: #FFF5EC; 
+            border: 1px solid #FFDAB9;
             border-radius: 12px;
             padding: 24px;
             text-align: left;
             transition: all 0.3s ease;
-            border: 1px solid #f0f0f0;
         }
         .feature-card:hover {
             transform: translateY(-5px);
@@ -60,7 +60,7 @@
         }
         .feature-icon {
             font-size: 2rem;
-            color: #2563eb;
+            color: #FF9AA2;
             margin-bottom: 15px;
         }
 
@@ -69,7 +69,17 @@
             height: 40rem;
             text-align: center;
             padding: 50px 20px;
-            /* background: #bfdbf7; Light Background */
+            background-color: #fffaf6;
+        }
+
+        .gradient-bg {
+            /* background: linear-gradient(135deg, #FFB6C1, #FF9AA2); */
+            background-color: #FFE5B4;
+            background-size: 300% 300%;
+            animation: gradientMove 8s ease;
+            height: 30rem;
+            display: flex;
+            align-items: center;
         }
 
         .section-title {
@@ -94,7 +104,8 @@
         }
 
         .step {
-            background: white;
+            background: #FFF5EC; 
+            border: 1px solid #FFDAB9;
             padding: 20px;
             width: 300px;
             border-radius: 10px;
@@ -108,7 +119,7 @@
 
         .step-icon {
             font-size: 40px;
-            color: #007bff;
+            color: #FF9AA2;
             margin-bottom: 10px;
         }
 
@@ -123,7 +134,7 @@
 
         .arrow {
             font-size: 50px;
-            color: #007bff;
+            color: #FF9AA2;
             margin: 0 10px;
         }
 
@@ -162,20 +173,15 @@
             flex-wrap: wrap;
             align-items: space-evenly;
             justify-content: center;
-            /* background-color: rgb(16, 36, 54); */
-            background-color: rgb(17 24 39);
+            background-color: #4A3F35; 
+            color: #FFE5B4;
             height: 8rem;
-            color: white;
         }
-
-        .gradient-bg {
-            /* background: linear-gradient(135deg, #2563eb, #4f46e5); */
-            background: linear-gradient(90deg, #63f9a9 0%, #4fd8a3 100%);
-            background-size: 300% 300%;
-            animation: gradientMove 8s ease;
-            height: 30rem;
-            display: flex;
-            align-items: center;
+        .f-info a {
+            color: #FFDAB9;
+        }
+        .f-info a:hover {
+            color: #FFB6C1;
         }
 
         @keyframes gradientMove {
@@ -185,8 +191,8 @@
         }
 
         .cta-btn-primary {
-            background: white;
-            color: #2563eb;
+            background: #FF6F61;
+            color: white;
             padding: 1rem 2rem;
             border: 0;
             border-radius: 0.5rem;
@@ -196,13 +202,13 @@
         }
 
         .cta-btn-primary:hover {
-            background: #f3f4f6;
+            background: #E85C50;
             transform: translateY(-2px);
         }
 
         .cta-btn-secondary {
-            background: transparent;
-            border: 2px solid white;
+            border: 2px solid #FF6F61;
+            color: #FF6F61;
             padding: 1rem 2rem;
             border-radius: 0.5rem;
             font-weight: bold;
@@ -211,7 +217,21 @@
         }
 
         .cta-btn-secondary:hover {
-            background: white;
-            color: #2563eb;
+            background: #FF6F61;
+            color: white;
             transform: translateY(-2px);
+        }
+
+        #btn {
+            background-color: #FF6F61;
+            color: #fff;
+            padding: 10px;
+            border: 0;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        #btn:hover {
+            background-color: #E85C50;
         }
