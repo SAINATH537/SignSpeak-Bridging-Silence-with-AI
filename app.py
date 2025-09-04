@@ -7,10 +7,12 @@ import numpy as np
 app = Flask(__name__)
 app.secret_key = 'e5b0b6ce3b7b2b3e8f2c9c5c4b6a7d9a2e3c4e5f6a7b8c9d'
 
-@app.route('/home')
+@app.route('/')
 def index():
     return render_template('home.html')
 
 @app.route('/translator')
 def translator():
     return render_template('translator.html')
+if __name__ == '__main__':
+    app.run(debug=True)
