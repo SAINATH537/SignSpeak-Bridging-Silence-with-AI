@@ -14,7 +14,3 @@ def index():
 @app.route('/translator')
 def translator():
     return render_template('translator.html')
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
