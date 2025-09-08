@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active" href="/">Home</a>
-                    <a class="nav-link" href="{{ url_for('translator') }}">Translator</a>
+                    <a class="nav-link" href="{{ url_for('translator')}}">Translator</a>
                     <a class="nav-link" href="#features">Features</a>
                     <a class="nav-link" href="#about">About</a>
-                    <a href="/get-started" id="btn">Get Started</a>
+                    <a href="{{ url_for('translator')}}" id="btn">Get Started</a>
                 </div>
             </div>
         </div>
@@ -38,16 +38,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 hero-text animate__animated animate__fadeInLeft">
-                    <h1>Breaking Communication Barriers</h1>
-                    <h4>Real-time Speech & Sign Language Translator</h4>
-                    <p>Effortlessly translate sign language to speech and vice versa with AI-powered accuracy.</p>
-                    <button class="cta-btn-primary">Get Started &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
-                    <!-- <a href="/login" class="btn btn-dark btn-lg">
-                        Get Started <i class="fa-solid fa-arrow-right"></i>
-                    </a> -->
-                    <!-- <button class="cta-btn-primary">Get Started for Free &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
-                    &nbsp;&nbsp;&nbsp;-->
-                    <!-- <button class="">Learn More</button> -->
+                    <h1>Connect Without Limits</h1>
+                    <h4>Instant Sign & Speech Translation</h4>
+                    <p>Translate sign language and spoken words instantly with the help of smart AI — making conversations simple and natural for everyone.</p>
+                    <button class="cta-btn-primary">Start Now &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
                 </div>
                 <div class="col-md-6 text-center hero-image animate__animated animate__fadeInRight">
                     <img src="../static/Img_Video/asl-sign-language.gif" alt="Sign Language Animation">
@@ -110,50 +104,50 @@
     <section class="how-it-works m-5">
         <br>
         <h2 class="section-title">How It Works</h2>
-        <p class="section-subtitle">A simple step-by-step guide to show how our system works</p>
+        <p class="section-subtitle">A simple step-by-step guide to show how SignSpeak bridges communication gaps</p>
         <br>
         <div class="steps-container">
             <!-- Step 1 -->
             <div class="step animate-on-scroll" data-animate="animate__fadeInUp">
                 <div class="step-icon">
-                    <i class="fa fa-user-cog"></i>
+                    <i class="fa fa-camera"></i>
                 </div>
                 <h3>Step 1</h3>
-                <h5>Admin Inputs Data</h5>
-                <p>The admin enters class, teacher, subject, and room details into the system.</p>
+                <h5>Capture the Sign</h5>
+                <p>The user records or streams a sign language gesture using their device camera.</p>
             </div>
 
             <div class="arrow">
                 <i class="fa fa-arrow-right"></i>
             </div>
-    
+
             <!-- Step 2 -->
             <div class="step animate-on-scroll" data-animate="animate__fadeInUp" data-delay="1s">
                 <div class="step-icon">
-                    <i class="fa fa-cogs"></i>
+                    <i class="fa fa-robot"></i>
                 </div>
                 <h3>Step 2</h3>
-                <h5>Generates the Timetable</h5>
-                <p>System generates an optimized timetable automatically avoiding clashes.</p>
+                <h5>AI-Powered Translation</h5>
+                <p>Our intelligent model analyzes the gesture and converts it into spoken or written text in real time.</p>
             </div>
 
             <div class="arrow">
                 <i class="fa fa-arrow-right"></i>
             </div>
-    
+
             <!-- Step 3 -->
             <div class="step animate-on-scroll" data-animate="animate__fadeInUp" data-delay="2s">
                 <div class="step-icon">
-                    <i class="fa fa-user-graduate"></i>
+                    <i class="fa fa-comments"></i>
                 </div>
                 <h3>Step 3</h3>
-                <h5>Teachers & Students Access Timetable</h5>
-                <p>Teachers & Students log in to view, download, or print their schedules.</p>
+                <h5>Communicate Effortlessly</h5>
+                <p>The translated message is displayed or spoken, enabling seamless communication between deaf and hearing users.</p>
             </div>
         </div>
         <br><br>
-        <form method="GET" action="/login">
-            <button type="submit" id="btn">Generate Your First Timetable</i></button>
+        <form method="GET" action="/translator">
+            <button type="submit" id="btn">Start Translating Now</button>
         </form>
     </section>
 

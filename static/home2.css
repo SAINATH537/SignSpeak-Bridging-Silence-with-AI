@@ -5,8 +5,8 @@
 
         /* Navbar */
         .navbar {
-            background-color: #ffeddd;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* background-color: #ffeddd; */
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
             height: 4rem;
         }
         .nav-link {
